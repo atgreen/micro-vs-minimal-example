@@ -1,0 +1,116 @@
+
+spring-petclinic-ubi9-micro (redhat 9.4)
+========================================
+Total: 30 (UNKNOWN: 0, LOW: 23, MEDIUM: 7, HIGH: 0, CRITICAL: 0)
+
+┌──────────────────────────┬────────────────┬──────────┬──────────────┬─────────────────────┬───────────────┬────────────────────────────────────────────────────────────┐
+│         Library          │ Vulnerability  │ Severity │    Status    │  Installed Version  │ Fixed Version │                           Title                            │
+├──────────────────────────┼────────────────┼──────────┼──────────────┼─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ java-21-openjdk-headless │ CVE-2024-21094 │ MEDIUM   │ affected     │ 1:21.0.5.0.10-3.el9 │               │ OpenJDK: C2 compilation fails with "Exceeded _node_regs    │
+│                          │                │          │              │                     │               │ array" (8317507)                                           │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-21094                 │
+├──────────────────────────┼────────────────┼──────────┼──────────────┼─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ libgcc                   │ CVE-2022-27943 │ LOW      │ will_not_fix │ 11.4.1-3.el9        │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows │
+│                          │                │          │              │                     │               │ stack exhaustion in demangle_const                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2022-27943                 │
+├──────────────────────────┼────────────────┤          │              ├─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ ncurses-base             │ CVE-2022-29458 │          │              │ 6.2-10.20210508.el9 │               │ ncurses: segfaulting OOB read                              │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2022-29458                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-45918 │          │ affected     │                     │               │ ncurses: NULL pointer dereference in tgetstr in            │
+│                          │                │          │              │                     │               │ tinfo/lib_termcap.c                                        │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45918                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-50495 │          │ will_not_fix │                     │               │ ncurses: segmentation fault via _nc_wrap_entry()           │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-50495                 │
+├──────────────────────────┼────────────────┤          │              │                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│ ncurses-libs             │ CVE-2022-29458 │          │              │                     │               │ ncurses: segfaulting OOB read                              │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2022-29458                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-45918 │          │ affected     │                     │               │ ncurses: NULL pointer dereference in tgetstr in            │
+│                          │                │          │              │                     │               │ tinfo/lib_termcap.c                                        │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45918                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-50495 │          │ will_not_fix │                     │               │ ncurses: segmentation fault via _nc_wrap_entry()           │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-50495                 │
+├──────────────────────────┼────────────────┼──────────┼──────────────┼─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ nspr                     │ CVE-2024-6602  │ MEDIUM   │ affected     │ 4.35.0-14.el9_2     │               │ Mozilla: Memory corruption in NSS                          │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                  │
+│                          ├────────────────┼──────────┼──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix │                     │               │ nss: Information exposure when DH secret are reused across │
+│                          │                │          │              │                     │               │ multiple TLS connections...                                │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected     │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal   │
+│                          │                │          │              │                     │               │ plaintext on Intel Sandy Bridge...                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                  │
+├──────────────────────────┼────────────────┼──────────┤              ├─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ nss                      │ CVE-2024-6602  │ MEDIUM   │              │ 3.101.0-7.el9_2     │               │ Mozilla: Memory corruption in NSS                          │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                  │
+│                          ├────────────────┼──────────┼──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix │                     │               │ nss: Information exposure when DH secret are reused across │
+│                          │                │          │              │                     │               │ multiple TLS connections...                                │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected     │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal   │
+│                          │                │          │              │                     │               │ plaintext on Intel Sandy Bridge...                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                  │
+├──────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│ nss-softokn              │ CVE-2024-6602  │ MEDIUM   │              │                     │               │ Mozilla: Memory corruption in NSS                          │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                  │
+│                          ├────────────────┼──────────┼──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix │                     │               │ nss: Information exposure when DH secret are reused across │
+│                          │                │          │              │                     │               │ multiple TLS connections...                                │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected     │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal   │
+│                          │                │          │              │                     │               │ plaintext on Intel Sandy Bridge...                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                  │
+├──────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│ nss-softokn-freebl       │ CVE-2024-6602  │ MEDIUM   │              │                     │               │ Mozilla: Memory corruption in NSS                          │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                  │
+│                          ├────────────────┼──────────┼──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix │                     │               │ nss: Information exposure when DH secret are reused across │
+│                          │                │          │              │                     │               │ multiple TLS connections...                                │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected     │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal   │
+│                          │                │          │              │                     │               │ plaintext on Intel Sandy Bridge...                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                  │
+├──────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│ nss-sysinit              │ CVE-2024-6602  │ MEDIUM   │              │                     │               │ Mozilla: Memory corruption in NSS                          │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                  │
+│                          ├────────────────┼──────────┼──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix │                     │               │ nss: Information exposure when DH secret are reused across │
+│                          │                │          │              │                     │               │ multiple TLS connections...                                │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected     │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal   │
+│                          │                │          │              │                     │               │ plaintext on Intel Sandy Bridge...                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                  │
+├──────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│ nss-util                 │ CVE-2024-6602  │ MEDIUM   │              │                     │               │ Mozilla: Memory corruption in NSS                          │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                  │
+│                          ├────────────────┼──────────┼──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix │                     │               │ nss: Information exposure when DH secret are reused across │
+│                          │                │          │              │                     │               │ multiple TLS connections...                                │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected     │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal   │
+│                          │                │          │              │                     │               │ plaintext on Intel Sandy Bridge...                         │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                  │
+├──────────────────────────┼────────────────┤          ├──────────────┼─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ pcre2                    │ CVE-2022-41409 │          │ will_not_fix │ 10.40-5.el9         │               │ pcre2: negative repeat value in a pcre2test subject line   │
+│                          │                │          │              │                     │               │ leads to inifinite...                                      │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2022-41409                 │
+├──────────────────────────┤                │          │              │                     ├───────────────┤                                                            │
+│ pcre2-syntax             │                │          │              │                     │               │                                                            │
+│                          │                │          │              │                     │               │                                                            │
+│                          │                │          │              │                     │               │                                                            │
+├──────────────────────────┼────────────────┤          │              ├─────────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ sqlite-libs              │ CVE-2023-36191 │          │              │ 3.34.1-7.el9_3      │               │ sqlite: CLI fault on missing -nonce                        │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-36191                 │
+│                          ├────────────────┤          ├──────────────┤                     ├───────────────┼────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-0232  │          │ affected     │                     │               │ sqlite: use-after-free bug in jsonParseAddNodeArray        │
+│                          │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2024-0232                  │
+└──────────────────────────┴────────────────┴──────────┴──────────────┴─────────────────────┴───────────────┴────────────────────────────────────────────────────────────┘

@@ -1,0 +1,282 @@
+
+spring-petclinic-ubi9 (redhat 9.4)
+==================================
+Total: 76 (UNKNOWN: 0, LOW: 51, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
+
+┌──────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬─────────────────────────────────────────────────────────────┐
+│         Library          │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                            │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ avahi-libs               │ CVE-2021-36217 │ MEDIUM   │ under_investigation │ 0.8-20.el9          │               │ avahi: local DoS against avahi-daemon via D-Bus interface   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-36217                  │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2017-6519  │ LOW      │ affected            │                     │               │ avahi: Multicast DNS responds to unicast queries outside of │
+│                          │                │          │                     │                     │               │ local network                                               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2017-6519                   │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ bzip2-libs               │ CVE-2019-12900 │          │                     │ 1.0.8-8.el9         │               │ bzip2: out-of-bounds write in function BZ2_decompress       │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2019-12900                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ cups-libs                │ CVE-2023-4504  │ MEDIUM   │ will_not_fix        │ 1:2.3.3op2-27.el9_4 │               │ libppd: Postscript Parsing Heap Overflow                    │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4504                   │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2021-25317 │ LOW      │                     │                     │               │ cups: insecure permissions of /var/log/cups allows for      │
+│                          │                │          │                     │                     │               │ symlink attacks                                             │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-25317                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-47175 │          │ affected            │                     │               │ cups: libppd: remote command injection via attacker         │
+│                          │                │          │                     │                     │               │ controlled data in PPD file...                              │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-47175                  │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ curl-minimal             │ CVE-2024-7264  │          │                     │ 7.76.1-29.el9_4.1   │               │ curl: libcurl: ASN.1 date parser overread                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7264                   │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ expat                    │ CVE-2024-45491 │ MEDIUM   │ will_not_fix        │ 2.5.0-2.el9_4.1     │               │ libexpat: Integer Overflow or Wraparound                    │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-45491                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-50602 │          │ affected            │                     │               │ libexpat: expat: DoS via XML_ResumeParser                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-50602                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ gawk                     │ CVE-2023-4156  │ LOW      │ will_not_fix        │ 5.1.0-6.el9         │               │ gawk: heap out of bound read in builtin.c                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4156                   │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ glib2                    │ CVE-2024-34397 │ MEDIUM   │ affected            │ 2.68.4-14.el9_4.1   │               │ glib2: Signal subscription vulnerabilities                  │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-34397                  │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-32636 │ LOW      │                     │                     │               │ glib: Timeout in fuzz_variant_text                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-32636                  │
+├──────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ gnupg2                   │ CVE-2022-3219  │          │ will_not_fix        │ 2.3.3-4.el9         │               │ gnupg: denial of service issue (resource consumption) using │
+│                          │                │          │                     │                     │               │ compressed packets                                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-3219                   │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ java-21-openjdk-headless │ CVE-2024-21094 │ MEDIUM   │ affected            │ 1:21.0.5.0.10-3.el9 │               │ OpenJDK: C2 compilation fails with "Exceeded _node_regs     │
+│                          │                │          │                     │                     │               │ array" (8317507)                                            │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-21094                  │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ krb5-libs                │ CVE-2024-26462 │          │                     │ 1.21.1-2.el9_4      │               │ krb5: Memory leak at /krb5/src/kdc/ndr.c                    │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-26462                  │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-26458 │ LOW      │                     │                     │               │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-26458                  │
+│                          ├────────────────┤          │                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-26461 │          │                     │                     │               │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-26461                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libarchive               │ CVE-2023-30571 │ MEDIUM   │ will_not_fix        │ 3.5.3-4.el9         │               │ libarchive: Race condition in multi-threaded use of         │
+│                          │                │          │                     │                     │               │ archive_write_disk_header() on posix based systems...       │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-30571                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libcurl-minimal          │ CVE-2024-7264  │ LOW      │ affected            │ 7.76.1-29.el9_4.1   │               │ curl: libcurl: ASN.1 date parser overread                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7264                   │
+├──────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libgcc                   │ CVE-2022-27943 │          │ will_not_fix        │ 11.4.1-3.el9        │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows  │
+│                          │                │          │                     │                     │               │ stack exhaustion in demangle_const                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-27943                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libgcrypt                │ CVE-2024-2236  │ MEDIUM   │ affected            │ 1.10.0-10.el9_2     │               │ libgcrypt: vulnerable to Marvin Attack                      │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-2236                   │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libstdc++                │ CVE-2022-27943 │ LOW      │ will_not_fix        │ 11.4.1-3.el9        │               │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows  │
+│                          │                │          │                     │                     │               │ stack exhaustion in demangle_const                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-27943                  │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libxml2                  │ CVE-2023-45322 │          │                     │ 2.9.13-6.el9_4      │               │ libxml2: use-after-free in xmlUnlinkNode() in tree.c        │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45322                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-34459 │          │ affected            │                     │               │ libxml2: buffer over-read in xmlHTMLPrintFileContext in     │
+│                          │                │          │                     │                     │               │ xmllint.c                                                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-34459                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libyaml                  │ CVE-2024-35325 │ MEDIUM   │ will_not_fix        │ 0.2.5-7.el9         │               │ libyaml: double-free in yaml_event_delete in                │
+│                          │                │          │                     │                     │               │ /src/libyaml/src/api.c                                      │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-35325                  │
+├──────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libzstd                  │ CVE-2022-4899  │ LOW      │                     │ 1.5.1-2.el9         │               │ zstd: mysql: buffer overrun in util.c                       │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-4899                   │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ ncurses-base             │ CVE-2022-29458 │          │                     │ 6.2-10.20210508.el9 │               │ ncurses: segfaulting OOB read                               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-29458                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-45918 │          │ affected            │                     │               │ ncurses: NULL pointer dereference in tgetstr in             │
+│                          │                │          │                     │                     │               │ tinfo/lib_termcap.c                                         │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45918                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-50495 │          │ will_not_fix        │                     │               │ ncurses: segmentation fault via _nc_wrap_entry()            │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-50495                  │
+├──────────────────────────┼────────────────┤          │                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ ncurses-libs             │ CVE-2022-29458 │          │                     │                     │               │ ncurses: segfaulting OOB read                               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-29458                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-45918 │          │ affected            │                     │               │ ncurses: NULL pointer dereference in tgetstr in             │
+│                          │                │          │                     │                     │               │ tinfo/lib_termcap.c                                         │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45918                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-50495 │          │ will_not_fix        │                     │               │ ncurses: segmentation fault via _nc_wrap_entry()            │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-50495                  │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ nspr                     │ CVE-2024-6602  │ MEDIUM   │ affected            │ 4.35.0-14.el9_2     │               │ Mozilla: Memory corruption in NSS                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                   │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix        │                     │               │ nss: Information exposure when DH secret are reused across  │
+│                          │                │          │                     │                     │               │ multiple TLS connections...                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected            │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal    │
+│                          │                │          │                     │                     │               │ plaintext on Intel Sandy Bridge...                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                   │
+├──────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ nss                      │ CVE-2024-6602  │ MEDIUM   │                     │ 3.101.0-7.el9_2     │               │ Mozilla: Memory corruption in NSS                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                   │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix        │                     │               │ nss: Information exposure when DH secret are reused across  │
+│                          │                │          │                     │                     │               │ multiple TLS connections...                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected            │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal    │
+│                          │                │          │                     │                     │               │ plaintext on Intel Sandy Bridge...                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                   │
+├──────────────────────────┼────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ nss-softokn              │ CVE-2024-6602  │ MEDIUM   │                     │                     │               │ Mozilla: Memory corruption in NSS                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                   │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix        │                     │               │ nss: Information exposure when DH secret are reused across  │
+│                          │                │          │                     │                     │               │ multiple TLS connections...                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected            │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal    │
+│                          │                │          │                     │                     │               │ plaintext on Intel Sandy Bridge...                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                   │
+├──────────────────────────┼────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ nss-softokn-freebl       │ CVE-2024-6602  │ MEDIUM   │                     │                     │               │ Mozilla: Memory corruption in NSS                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                   │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix        │                     │               │ nss: Information exposure when DH secret are reused across  │
+│                          │                │          │                     │                     │               │ multiple TLS connections...                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected            │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal    │
+│                          │                │          │                     │                     │               │ plaintext on Intel Sandy Bridge...                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                   │
+├──────────────────────────┼────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ nss-sysinit              │ CVE-2024-6602  │ MEDIUM   │                     │                     │               │ Mozilla: Memory corruption in NSS                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                   │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix        │                     │               │ nss: Information exposure when DH secret are reused across  │
+│                          │                │          │                     │                     │               │ multiple TLS connections...                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected            │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal    │
+│                          │                │          │                     │                     │               │ plaintext on Intel Sandy Bridge...                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                   │
+├──────────────────────────┼────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ nss-util                 │ CVE-2024-6602  │ MEDIUM   │                     │                     │               │ Mozilla: Memory corruption in NSS                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-6602                   │
+│                          ├────────────────┼──────────┼─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2020-12413 │ LOW      │ will_not_fix        │                     │               │ nss: Information exposure when DH secret are reused across  │
+│                          │                │          │                     │                     │               │ multiple TLS connections...                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-12413                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7531  │          │ affected            │                     │               │ mozilla: nss: PK11_Encrypt using CKM_CHACHA20 can reveal    │
+│                          │                │          │                     │                     │               │ plaintext on Intel Sandy Bridge...                          │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7531                   │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ openldap                 │ CVE-2023-2953  │          │                     │ 2.6.6-3.el9         │               │ openldap: null pointer dereference in ber_memalloc_x        │
+│                          │                │          │                     │                     │               │ function                                                    │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-2953                   │
+├──────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ openssl-libs             │ CVE-2023-6237  │          │                     │ 1:3.0.7-28.el9_4    │               │ openssl: Excessive time spent checking invalid RSA public   │
+│                          │                │          │                     │                     │               │ keys                                                        │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-6237                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-2511  │          │ will_not_fix        │                     │               │ openssl: Unbounded memory growth with session handling in   │
+│                          │                │          │                     │                     │               │ TLSv1.3                                                     │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-2511                   │
+│                          ├────────────────┤          │                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-41996 │          │                     │                     │               │ openssl: remote attackers (from the client side) to trigger │
+│                          │                │          │                     │                     │               │ unnecessarily expensive server-side...                      │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-41996                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-4603  │          │ affected            │                     │               │ openssl: Excessive time spent checking DSA keys and         │
+│                          │                │          │                     │                     │               │ parameters                                                  │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-4603                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-4741  │          │ will_not_fix        │                     │               │ openssl: Use After Free with SSL_free_buffers               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-4741                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-5535  │          │ affected            │                     │               │ openssl: SSL_select_next_proto buffer overread              │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-5535                   │
+├──────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ pcre2                    │ CVE-2022-41409 │          │ will_not_fix        │ 10.40-5.el9         │               │ pcre2: negative repeat value in a pcre2test subject line    │
+│                          │                │          │                     │                     │               │ leads to inifinite...                                       │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-41409                  │
+├──────────────────────────┤                │          │                     │                     ├───────────────┤                                                             │
+│ pcre2-syntax             │                │          │                     │                     │               │                                                             │
+│                          │                │          │                     │                     │               │                                                             │
+│                          │                │          │                     │                     │               │                                                             │
+├──────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ python3                  │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.6    │               │ python: Web cache poisoning via urllib.parse.parse_qsl and  │
+│                          │                │          │                     │                     │               │ urllib.parse.parse_qs by using a semicolon...               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-23336                  │
+│                          ├────────────────┤          │                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-8088  │          │                     │                     │               │ python: cpython: Iterating over a malicious ZIP file may    │
+│                          │                │          │                     │                     │               │ lead to Denial...                                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-8088                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-9287  │          │ under_investigation │                     │               │ python: Virtual environment (venv) activation scripts don't │
+│                          │                │          │                     │                     │               │ quote paths                                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-9287                   │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-0397  │ LOW      │                     │                     │               │ cpython: python: Memory race condition in ssl.SSLContext    │
+│                          │                │          │                     │                     │               │ certificate store methods                                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-0397                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7592  │          │ affected            │                     │               │ cpython: python: Uncontrolled CPU resource consumption when │
+│                          │                │          │                     │                     │               │ in http.cookies module                                      │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7592                   │
+├──────────────────────────┼────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ python3-libs             │ CVE-2021-23336 │ MEDIUM   │                     │                     │               │ python: Web cache poisoning via urllib.parse.parse_qsl and  │
+│                          │                │          │                     │                     │               │ urllib.parse.parse_qs by using a semicolon...               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-23336                  │
+│                          ├────────────────┤          │                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-8088  │          │                     │                     │               │ python: cpython: Iterating over a malicious ZIP file may    │
+│                          │                │          │                     │                     │               │ lead to Denial...                                           │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-8088                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-9287  │          │ under_investigation │                     │               │ python: Virtual environment (venv) activation scripts don't │
+│                          │                │          │                     │                     │               │ quote paths                                                 │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-9287                   │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-0397  │ LOW      │                     │                     │               │ cpython: python: Memory race condition in ssl.SSLContext    │
+│                          │                │          │                     │                     │               │ certificate store methods                                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-0397                   │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-7592  │          │ affected            │                     │               │ cpython: python: Uncontrolled CPU resource consumption when │
+│                          │                │          │                     │                     │               │ in http.cookies module                                      │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-7592                   │
+├──────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel        │ CVE-2024-37891 │ MEDIUM   │                     │ 21.2.3-8.el9        │               │ urllib3: proxy-authorization request header is not stripped │
+│                          │                │          │                     │                     │               │ during cross-origin redirects                               │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-37891                  │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2021-3572  │ LOW      │                     │                     │               │ python-pip: Incorrect handling of unicode separators in git │
+│                          │                │          │                     │                     │               │ references                                                  │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-3572                   │
+├──────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ sqlite-libs              │ CVE-2023-36191 │          │ will_not_fix        │ 3.34.1-7.el9_3      │               │ sqlite: CLI fault on missing -nonce                         │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-36191                  │
+│                          ├────────────────┤          ├─────────────────────┤                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2024-0232  │          │ affected            │                     │               │ sqlite: use-after-free bug in jsonParseAddNodeArray         │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-0232                   │
+├──────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ systemd-libs             │ CVE-2021-3997  │ MEDIUM   │                     │ 252-32.el9_4.7      │               │ systemd: Uncontrolled recursion in systemd-tmpfiles when    │
+│                          │                │          │                     │                     │               │ removing files                                              │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-3997                   │
+├──────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ tar                      │ CVE-2005-2541  │          │ will_not_fix        │ 2:1.34-6.el9_4.1    │               │ tar: does not properly warn the user when extracting setuid │
+│                          │                │          │                     │                     │               │ or setgid...                                                │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2005-2541                   │
+│                          ├────────────────┼──────────┤                     │                     ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                          │ CVE-2023-39804 │ LOW      │                     │                     │               │ tar: Incorrectly handled extension attributes in PAX        │
+│                          │                │          │                     │                     │               │ archives can lead to a...                                   │
+│                          │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-39804                  │
+└──────────────────────────┴────────────────┴──────────┴─────────────────────┴─────────────────────┴───────────────┴─────────────────────────────────────────────────────────────┘
