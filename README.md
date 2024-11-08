@@ -7,9 +7,7 @@ images.
 
 While the final applications operate identically, Aqua’s Trivy scanner
 reports significantly fewer vulnerabilities in the micro variant: 72%
-fewer "medium" and 55% fewer "low" CVEs (as of the latest scan).> An
-anecdotal comparison between UBI9 minimal- and micro-based application
-containers
+fewer "medium" and 55% fewer "low" CVEs (as of the latest scan).
 
 ```less
 spring-petclinic-ubi9-minimal (redhat 9.4)
